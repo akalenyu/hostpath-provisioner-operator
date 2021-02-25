@@ -388,7 +388,7 @@ func getOperatorRules() *[]rbacv1.PolicyRule {
 				"serviceaccounts",
 			},
 			ResourceNames: []string{
-				"hostpath-provisioner-admin",
+				hostpathprovisioner.AdminServiceAccountName,
 			},
 			Verbs: []string{
 				"*",

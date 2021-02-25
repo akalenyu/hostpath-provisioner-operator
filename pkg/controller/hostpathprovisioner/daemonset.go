@@ -133,7 +133,7 @@ func createDaemonSetObject(cr *hostpathprovisionerv1.HostPathProvisioner, reqLog
 					Labels: labels,
 				},
 				Spec: corev1.PodSpec{
-					ServiceAccountName: cr.Name + "-admin",
+					ServiceAccountName: AdminServiceAccountName,
 					Containers: []corev1.Container{
 						{
 							Name:            cr.Name,

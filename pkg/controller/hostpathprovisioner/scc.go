@@ -110,7 +110,7 @@ func (r *ReconcileHostPathProvisioner) deleteSCC(cr *hostpathprovisionerv1.HostP
 }
 
 func createSecurityContextConstraintsObject(cr *hostpathprovisionerv1.HostPathProvisioner, namespace string) *secv1.SecurityContextConstraints {
-	saName := fmt.Sprintf("system:serviceaccount:%s:%s-admin", namespace, cr.Name)
+	saName := fmt.Sprintf("system:serviceaccount:%s:%s", namespace, AdminServiceAccountName)
 	labels := map[string]string{
 		"k8s-app": cr.Name,
 	}

@@ -100,7 +100,7 @@ func createClusterRoleBindingObject(cr *hostpathprovisionerv1.HostPathProvisione
 		Subjects: []rbacv1.Subject{
 			{
 				Kind:      "ServiceAccount",
-				Name:      cr.Name + "-admin",
+				Name:      AdminServiceAccountName,
 				Namespace: namespace,
 			},
 		},

@@ -449,7 +449,7 @@ func createServiceAccountObject(cr *hostpathprovisionerv1.HostPathProvisioner, n
 	}
 	return &corev1.ServiceAccount{
 		ObjectMeta: metav1.ObjectMeta{
-			Name:      cr.Name + "-admin",
+			Name:      AdminServiceAccountName,
 			Namespace: namespace,
 			Labels:    labels,
 		},

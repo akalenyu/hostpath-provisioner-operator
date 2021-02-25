@@ -14,7 +14,7 @@
 
 IMAGE?=hostpath-provisioner-operator
 TAG?=latest
-DOCKER_REPO?=quay.io/kubevirt
+DOCKER_REPO?=akalenyu
 
 all: test build
 

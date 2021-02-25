@@ -24,6 +24,8 @@ const (
 	provisionerImageEnvVarName = "PROVISIONER_IMAGE"
 	// OperatorServiceAccountName is the name of Service Account used to run the operator.
 	OperatorServiceAccountName = "hostpath-provisioner-operator"
+	// AdminServiceAccountName is the name of Service Account used to run the controller.
+	AdminServiceAccountName = "hostpath-provisioner-admin"
 
 	createResourceStart   = "CreateResourceStart"
 	createResourceFailed  = "CreateResourceFailed"
